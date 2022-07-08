@@ -54,11 +54,19 @@ header h1 {
 }
 
 .calc-layout table #display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     height: 72%;
     width: 95%;
     margin: auto;
     background-color: white;
     border-radius: 0.5vw;
+}
+
+#display p {
+    text-align: center;
 }
 
 .calc-layout button {
