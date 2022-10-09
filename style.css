@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flexed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+}
+
+header {
+    text-transform: uppercase;
+    text-align: center;
+    height: 8vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    font-size: 4vh;
+}
+
+.calc-layout {
+    margin: 2vh;
+    background-color: rgb(0, 0, 0);
+    height: 90vh;
+    width: 512px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+
+.calc-layout table {
+    height: 100%;
+    width: 100%;
+    border: 2px solid white;
+    table-layout: fixed;
+}
+
+.calc-layout table tr {
+    height: 16%;
+}
+
+.calc-layout table td {
+    width: 25%;
+}
+
+#display {
+    height: 72%;
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    border-radius: 0.5vw;
+    text-align: center;
+    font-size: 36px;
+    overflow-x: auto;
+    
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pressed {
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width: 512px) {
+    .calc-layout {
+        width: 90vw;
+    }
+}

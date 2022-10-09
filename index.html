@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="flexed">
+        <header class="flexed">
+            <h1 class="logo">Calculator</h1>
+        </header>
+        <div class="calc-layout">
+            <table>
+                <tr id="row-1">
+                    <td id="screen" colspan="4"><h3 id="display" class="flexed">0</h3></td>
+                </tr>
+                <tr id="row-2">
+                    <td colspan="2"><button class="btn btn-ac">AC</button></td>
+                    <td><button class="btn btn-bs"><i class="material-icons">backspace</i></button></td>
+                    <td><button class="btn sign btn-divide">/</button></td>
+                </tr>
+                <tr id="row-3">
+                    <td><button class="btn nums btn-7">7</button></td>
+                    <td><button class="btn nums btn-8">8</button></td>
+                    <td><button class="btn nums btn-9">9</button></td>
+                    <td><button class="btn sign btn-multiply">*</button></td>
+                </tr>
+                <tr id="row-4">
+                    <td><button class="btn nums btn-4">4</button></td>
+                    <td><button class="btn nums btn-5">5</button></td>
+                    <td><button class="btn nums btn-6">6</button></td>
+                    <td><button class="btn sign btn-subtract">-</button></td>
+                </tr>
+                <tr id="row-5">
+                    <td><button class="btn nums btn-1">1</button></td>
+                    <td><button class="btn nums btn-2">2</button></td>
+                    <td><button class="btn nums btn-3">3</button></td>
+                    <td><button class="btn sign btn-plus">+</button></td>
+                </tr>
+                <tr id="row-6">
+                    <td colspan="2"><button class="btn nums btn-0">0</button></td>
+                    <td><button class="btn sign btn-dot">&period;</button></td>
+                    <td><button class="btn btn-equal">&equals;</button></td>
+                </tr>
+            </table>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
